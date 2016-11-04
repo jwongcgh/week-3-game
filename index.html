@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hangman by JW</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    
+    <div class=container>
+        <div class="header">
+            <h1> Hangman </h1>
+        </div>
+        <hr>
+        <div class="content">
+            <section class="mainSection">
+                <div class="col-pic">
+                    <video id="clip" autoplay loop>
+                        <source src="assets/images/stage.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <aside class="col-game">
+                <div class="stats">
+                    <div class="wins">Wins: <span id="wins">0</span></div>
+                    <div class="losses">Loses: <span id="losses">0</span></div>
+                </div>
+                <div class="messages">
+                    <h3 id="notification">Guess the Word</h4>
+                </div>
+                <div class="word"> 
+                        <h2 id="fillIt">Press Enter to Start Game</h2>
+                </div>
+                <div class="guessed">
+                    <div class="usedTitle">
+                        <h4>Already Used Letters</h4>
+                    </div>
+                    <div class="used">
+                        <h3 id="used"></h3>
+                    </div>
+                </div>
+                <div class="lives">
+                    <h5>Lives</h5>
+                    <div class="bars">
+                        <div class="buttons">
+                            <button id="butt7"> </button>
+                            <button id="butt6"> </button>
+                            <button id="butt5"> </button>
+                            <button id="butt4"> </button>
+                            <button id="butt3"> </button>
+                            <button id="butt2"> </button>
+                            <button id="butt1"> </button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <hr>
+        <div class="footnote">
+            <p>&#169; Copyright 2016 Jorge Wong</p>
+        </div>
+    </div>
+
+</body>
+</html>

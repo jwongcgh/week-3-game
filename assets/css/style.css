@@ -1,0 +1,214 @@
+html, body {
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 960px;
+	height: 615px;
+	line-height: 1.2;
+	background-image: url(../images/c-10-0-80-a-JW.jpg);
+	background-size: cover;
+
+}
+
+.container {
+	width: 960px;
+	height: 100%;	
+	margin-top: 25px;
+}
+
+hr {
+	clear: both;
+	margin-bottom: 25px;
+	width: 90%;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px 3px lightgreen;
+}
+
+.col-pic {
+	width: 360px;
+	height: 425px;
+	float: left;
+	border-radius: 15px;
+	margin-left: 20px;
+}
+
+.col-game {
+	width: 520px;
+	height: 425px;
+	float: right;
+	margin-right: 20px;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+.wins, .losses {
+	float: left;
+	width: 20%;
+	/*border: blue dotted 1px;*/
+	border-radius: 5px;
+	padding: 7px 0 5px 0;
+	background-color: white;
+	text-align: center;
+	margin-bottom: 5px;
+
+}
+
+.wins {
+	float: left;
+	color: blue;
+	box-shadow: 1px 1px 3px pink;
+}
+
+.losses {
+	float: right;
+	color: red;
+	box-shadow: 1px 1px 3px lightblue;
+}
+
+#wins, #losses {
+	font-weight: bold;
+	color: black;
+}
+
+.stats {
+clear: both;
+	width: 100%;
+	height: 8%;
+	text-decoration: underline;
+}
+
+.messages {
+	clear: both;
+	width: 100%;
+	height: 17%;
+	border-radius: 15px;
+	margin-bottom: 9px;
+	background-color: white;
+	opacity: 0.75;
+	padding-top: 10px;
+	box-shadow: 1px 1px 3px #CA88E8;
+}
+
+#notification {
+	font-size: 1.5em;
+	padding-top: 18px;
+
+}
+
+
+.word {
+	clear: both;
+	width: 100%;
+	height: 30%;
+	border-radius: 15px;
+	margin-bottom: 9px;
+	background-color: white;
+	opacity: 0.75;
+	box-shadow: 1px 1px 3px orange;
+}
+
+#fillIt {
+font-size: 2em;
+padding-top: 50px;
+
+
+}
+
+.guessed {
+	width: 100%;
+	height: 15%;
+	border-radius: 15px;
+	padding: 5px 0 5px 0; 
+	margin-bottom: 5px;
+	background-color: white;
+	opacity: 0.75;
+	box-shadow: 1px 1px 3px #9BEAFF;
+	
+}
+.usedTitle {
+	font-size: 1.2em;
+	padding-top: 5px;
+}
+.used {
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+	font-size: 1.5em;
+	letter-spacing: 9px;
+}
+
+
+.lives {
+	width: 100%;
+	height: 15%;
+	padding: 7px 0 3px 0;
+	border-radius: 15px;
+	background-color: white;
+	opacity: 0.75;
+	text-shadow: 1px 1px 3px grey;
+	box-shadow: 1px 1px 3px #C4FFD1;
+}
+
+.buttons {
+	text-align: center;
+width: 100%;
+	height: 10%;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+
+.footnote {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	background-color: transparent;
+	opacity: 0.75;
+	text-shadow: 1px 1px 3px lightgreen;
+}
+
+p {
+padding: 5px 0 5px 0;
+background-color: white;
+width: 75%;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10px;
+box-shadow: 1px 1px 3px lightblue;
+}
+
+
+h1 {
+	font-size: 2.5em;
+	font-weight: bolder;
+	padding: 20px;
+} 
+
+
+h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
+
+button {
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: not-allowed;
+    opacity: 0.85;
+}
+
+video {
+	border-radius: 15px;
+	opacity: .97;
+}
+
