@@ -49,7 +49,8 @@
         fillWord = [];
         punches = 0;
         emptyWord = [];
-
+		document.getElementById("used").innerHTML = alreadyUsed;
+		
         // reset live counts & shows all buttons
         for (l = 0; l < 7; l++) {
             var element = document.getElementById(butt[l]);
