@@ -49,8 +49,6 @@
         fillWord = [];
         punches = 0;
         emptyWord = [];
-        
-		document.getElementById("used").innerHTML = alreadyUsed;
 		
         // reset live counts & shows all buttons
         for (l = 0; l < 7; l++) {
@@ -77,8 +75,10 @@
         // converting array into string for display, and display in DOM
         emptyWord = fillWord.join(" ");
         document.getElementById("notification").innerHTML = "Guess the word. Enter a letter";
-        document.getElementById("fillIt").innerHTML = emptyWord; // $$$
-
+        document.getElementById("fillIt").innerHTML = emptyWord;
+		
+		document.getElementById("used").innerHTML = alreadyUsed;
+		
         // count words played
         wordCount++;
         // console.log("words played= " + wordCount)
