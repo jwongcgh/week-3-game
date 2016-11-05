@@ -45,10 +45,11 @@
         // console.log("inside retrieveWord");
         // console.log("word array before retrieve= " + wordArr);
         // resetting variables to empty
-        alreadyUsed = [];
+        alreadyUsed = [""];
         fillWord = [];
         punches = 0;
         emptyWord = [];
+        
 		document.getElementById("used").innerHTML = alreadyUsed;
 		
         // reset live counts & shows all buttons
