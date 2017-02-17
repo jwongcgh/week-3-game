@@ -49,7 +49,7 @@
         fillWord = [];
         punches = 0;
         emptyWord = [];
-		
+
         // reset live counts & shows all buttons
         for (l = 0; l < 7; l++) {
             var element = document.getElementById(butt[l]);
@@ -76,9 +76,9 @@
         emptyWord = fillWord.join(" ");
         document.getElementById("notification").innerHTML = "Guess the word. Enter a letter";
         document.getElementById("fillIt").innerHTML = emptyWord;
-		
+
 		document.getElementById("used").innerHTML = alreadyUsed;
-		
+
         // count words played
         wordCount++;
         // console.log("words played= " + wordCount)
@@ -102,7 +102,7 @@
         }); // end event listener
     }
 
-    // ********** checking for duplicates ********** 
+    // ********** checking for duplicates **********
 
     function duplicated() {
         var store = false;
@@ -126,12 +126,12 @@
         }
     } // end duplicated
 
-    // ********** matching letters to word ********** 
+    // ********** matching letters to word **********
 
     function matchLet() {
         // check for duplicate entries
         duplicated();
-        
+
         var match;
         // match testting
         for (i = 0; i < compWord.length; i++) {
@@ -181,8 +181,8 @@
         }
 
         if (punches > 6) {
-            document.getElementById("notification").innerHTML = "You didn't make it";
-            document.getElementById('notification').style.paddingTop = "18px";
+            document.getElementById("notification").innerHTML = "You didn't make it <br>Press Enter/Return to Continue";
+            document.getElementById('notification').style.paddingTop = "6px";
             document.getElementById('clip').src = "assets/images/hanged.mp4";
             losses = wordCount - wins;
             document.getElementById("losses").innerHTML = losses;
@@ -192,7 +192,7 @@
 
     } // end of function matchLet
 
-    // ********** kill buttons ********** 
+    // ********** kill buttons **********
 
     function killButt(b) {
         var element = document.getElementById(butt[b]);
