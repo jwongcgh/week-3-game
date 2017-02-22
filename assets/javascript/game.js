@@ -29,7 +29,8 @@
             }
             document.getElementById("notification").innerHTML = "Let's Play";
             document.getElementById('notification').style.paddingTop = "18px";
-            document.getElementById('clip').src = "assets/images/stage.mp4";
+            document.getElementById('stage').style.display = "block";
+            document.getElementById('clip').style.display = "none";
             document.getElementById('fillIt').style.fontSize = "4em";
             document.getElementById('fillIt').style.paddingTop = "28px";
             letsPlay();
@@ -77,7 +78,7 @@
         document.getElementById("notification").innerHTML = "Guess the word. Enter a letter";
         document.getElementById("fillIt").innerHTML = emptyWord;
 
-		document.getElementById("used").innerHTML = alreadyUsed;
+        document.getElementById("used").innerHTML = alreadyUsed;
 
         // count words played
         wordCount++;
@@ -183,7 +184,8 @@
         if (punches > 6) {
             document.getElementById("notification").innerHTML = "You didn't make it <br>Press Enter/Return to Continue";
             document.getElementById('notification').style.paddingTop = "6px";
-            document.getElementById('clip').src = "assets/images/hanged.mp4";
+            document.getElementById('stage').style.display = "none";
+            document.getElementById('clip').style.display = "block";
             losses = wordCount - wins;
             document.getElementById("losses").innerHTML = losses;
             nextWord = true;
