@@ -22,7 +22,7 @@
     // nextWord = true only at start of game or when new word is required
     document.addEventListener("keyup", function(event) {
         if (event.which == 13) {
-            console.log("let's Play!");
+
             if (nextWord) {
                 retrieveWord();
                 nextWord = false;
@@ -43,8 +43,6 @@
     function retrieveWord() {
         // after function is accessed, nextWord turns false
         nextWord = false;
-        // console.log("inside retrieveWord");
-        // console.log("word array before retrieve= " + wordArr);
         // resetting variables to empty
         alreadyUsed = [""];
         fillWord = [];
@@ -71,7 +69,6 @@
         }
 
         compWord = wordArr[random];
-        console.log("compWord = " + compWord);
 
         // converting array into string for display, and display in DOM
         emptyWord = fillWord.join(" ");
@@ -82,7 +79,6 @@
 
         // count words played
         wordCount++;
-        // console.log("words played= " + wordCount)
 
         return;
         // }
@@ -123,7 +119,6 @@
             punches1 = false;
             alreadyUsed.push(userGuess);
             document.getElementById("used").innerHTML = alreadyUsed;
-            // console.log("storing letter: " + alreadyUsed);
         }
     } // end duplicated
 
@@ -200,4 +195,3 @@
         var element = document.getElementById(butt[b]);
         element.style.display = "none";
     }
-
